@@ -240,9 +240,12 @@ function updateSim() {
         if (ipNeeded > 4.0) {
             alertBox.className = 'alert error';
             alertBox.innerHTML = `<strong>Target IPK ${targetIpk.toFixed(2)} Tidak Realistis</strong><br>Membutuhkan IP Semester 6 sebesar ${ipNeeded.toFixed(2)} (Maksimal 4.00).`;
+        } else if (newIpk < targetIpk) {
+            alertBox.className = 'alert warning';
+            alertBox.innerHTML = `<strong>Simulasi Belum Mencapai Target!</strong><br>Secara teori IPK ${targetIpk.toFixed(2)} masih bisa dicapai, tetapi Anda butuh IP Semester 6 minimal <strong>${ipNeeded.toFixed(2)}</strong>. (Simulasi Anda saat ini baru mencapai IP ${ipSem6.toFixed(2)}).`;
         } else {
             alertBox.className = 'alert success';
-            alertBox.innerHTML = `<strong>Target IPK ${targetIpk.toFixed(2)} Bisa Dicapai!</strong><br>Anda membutuhkan minimal IP Semester 6 sebesar <strong>${ipNeeded.toFixed(2)}</strong>.`;
+            alertBox.innerHTML = `<strong>Target IPK ${targetIpk.toFixed(2)} Tercapai! 🎉</strong><br>Selamat! Simulasi IP Semester 6 Anda (${ipSem6.toFixed(2)}) sudah melampaui batas aman yang dibutuhkan (${ipNeeded.toFixed(2)}).`;
         }
         alertBox.style.display = 'block';
     } else {
