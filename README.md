@@ -22,13 +22,13 @@ Aplikasi kalkulator dan simulasi IPK interaktif yang dirancang khusus untuk memp
 
 ## 💡 Konversi Skala Nilai
 Aplikasi ini secara *default* menggunakan standar konversi berikut (dapat disesuaikan di `script.js` jika diperlukan):
-- **A**  : 85 - 100
-- **AB** : 80 - 84.99
-- **B**  : 75 - 79.99
-- **BC** : 70 - 74.99
-- **C**  : 60 - 69.99
-- **D**  : 50 - 59.99
-- **E**  : 0 - 49.99
+- **A**  : 75 - 100
+- **AB** : 70 - 74.99
+- **B**  : 65 - 69.99
+- **BC** : 60 - 64.99
+- **C**  : 50 - 59.99
+- **D**  : 40 - 49.99
+- **E**  : 0 - 39.99
 
 ---
 *Dibuat untuk mempermudah strategi kelulusan di semester krusial! 🚀*

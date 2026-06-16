@@ -19,12 +19,12 @@ let activeCourseKeys = Object.keys(courses);
 let simGrades = {};
 
 function getGrade(score) {
-    if (score >= 85) return "A";
-    if (score >= 80) return "AB";
-    if (score >= 75) return "B";
-    if (score >= 70) return "BC";
-    if (score >= 60) return "C";
-    if (score >= 50) return "D";
+    if (score >= 75) return "A";
+    if (score >= 70) return "AB";
+    if (score >= 65) return "B";
+    if (score >= 60) return "BC";
+    if (score >= 50) return "C";
+    if (score >= 40) return "D";
     return "E";
 }
 
